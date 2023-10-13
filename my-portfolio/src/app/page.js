@@ -1,18 +1,20 @@
-import Image from 'next/image'
-import HeroSection from '../components/heroSection'
+import React from 'react';
+import Navbar from '@/components/nav';
+import HeroSection from '@/components/heroSection';
 
-
-export default function Home() {
+function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <section>
-        <h1>Hello World </h1>
-        <p>This is just a test pagaraph for the website!</p>
-        <div className="container mt-24 mx-auto px-12 py-4">
-        <HeroSection />
-        </div>
-      </section>
-          
+    <main className='flex min-h-screen flex-col text--colors_default bg--default'>
+      <Navbar />
+      <div class='container mx-auto px-12 py-4'>
+      <HeroSection />
+      </div>
+
+      <h1 className='text-3xl font-bold underline text--colors_primary px-20 py-12'>
+        This is the landing page.
+      </h1>
     </main>
-  )
+  );
 }
+
+export default Home;
