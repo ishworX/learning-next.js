@@ -21,5 +21,5 @@ colour configuration using native tailwind css colours
 
 /** customized backgrounds **/
 .bg--default {
-  @apply bg-white dark:bg-slate-900;
+  @apply bg-white dark:bg-black;
 }
