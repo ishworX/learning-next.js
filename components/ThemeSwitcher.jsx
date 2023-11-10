@@ -48,7 +48,8 @@ function ThemeSwitcher() {
     }, [storedTheme]);
 
     return (
-        <div className='theme-switcher flex items-center ml-12'>
+        <div className='theme-switcher flex items-center ml-12 mt-[-38px]'>
+            {/* Add `mt-[-10px]` class to move the buttons up */}
             <button
                 type='button'
                 className={`dark-mode-switch cursor-pointer mr-6 w-[40px] h-[40px] p-[10px] rounded-[100%] 
@@ -57,8 +58,6 @@ function ThemeSwitcher() {
             >
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    // width="20"
-                    // height="20"
                     fill='currentColor'
                     className='bi bi-moon-stars-fill w-[18px] h-[18px]'
                     viewBox='0 0 16 16'
@@ -75,8 +74,6 @@ function ThemeSwitcher() {
             >
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
-                    // width="20"
-                    // height="20"
                     fill='currentColor'
                     className='bi bi-brightness-high w-[18px] h-[18px]'
                     viewBox='0 0 16 16'
@@ -88,4 +85,7 @@ function ThemeSwitcher() {
     );
 }
 
+function isMobile() {
+    return window.innerWidth < 640; // Adjust this value as needed for your specific mobile breakpoint
+}
 export default ThemeSwitcher;

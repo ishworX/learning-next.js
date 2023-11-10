@@ -50,7 +50,7 @@ const HeroSection = () => {
                         className="m-4 bg-gradient-to-br from-blue-300 via-purple-500 to-blue-600 px-1 py-1  text-white rounded-full"
                         onClick={downloadCV}
                     >
-                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                        <span className="block rounded-full px-5 py-2">
                             My Projects
                         </span>
                     </button>
@@ -58,7 +58,7 @@ const HeroSection = () => {
                         className="m-4 bg-gradient-to-br from-blue-300 via-purple-500 to-blue-600 px-1 py-1  text-white rounded-full"
                         onClick={downloadCV}
                     >
-                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                        <span className="block rounded-full px-5 py-2">
                             Download CV
                         </span>
                     </button>
