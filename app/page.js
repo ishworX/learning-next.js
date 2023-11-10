@@ -1,8 +1,11 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import AboutSection from "@/components/AboutSection";
-import ProjectsSection from "@/components/ProjectsSection";
+import Navbar from '/components/Navbar';
+import HeroSection from '/components/HeroSection';
+import AboutSection from "/components/AboutSection";
+import ProjectsSection from "/components/ProjectsSection";
+import EmailSection from "/components/EmailSection";
+import Footer from "/components/Footer";
+
 
 function Home() {
   return (
@@ -12,11 +15,9 @@ function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
+      <EmailSection />
       </div>
-
-      <h1 className='text-3xl font-bold underline text--colors_primary px-20 py-12'>
-        This is the landing page.
-      </h1>
+      <Footer />
     </main>
   );
 }

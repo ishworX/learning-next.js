@@ -1,20 +1,38 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import { EmailTemplate } from '../../components/EmailTemplate';
-import { Resend } from 'resend';
+import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer'
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export async function POST(request) {
     try {
-        const data = await resend.emails.send({
-            from: 'Acme <onboarding@resend.dev>',
-            to: ['delivered@resend.dev'],
-            subject: 'Hello world',
-            react: EmailTemplate({ firstName: 'John' }),
-        });
+        const { email, subject, message } = await request.json();
 
-        res.status(200).json(data);
+        const EMAIL_ADDRESS = process.env.EMAIL_ADDRESS;
+        const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
+        const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
+
+        const transporter = nodemailer.createTransport({
+            service: process.env.EMAIL_ADDRESS,
+            auth: {
+                user: EMAIL_ADDRESS,
+                pass: EMAIL_PASSWORD
+            }
+        })
+
+        const mailOption = {
+            from: EMAIL_ADDRESS,
+            to: RECIPIENT_EMAIL,
+            subject: subject,
+            html: `
+        <h3>Hello Ishwor</h3>
+        <li> title: ${subject}</li>
+        <li> email: ${email}</li>
+        <li> message: ${message}</li> 
+        `
+        }
+
+        await transporter.sendMail(mailOption)
+
+        return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
     } catch (error) {
-        res.status(400).json(error);
+        return NextResponse.json({ message: "Failed to Send Email" }, { status: 500 })
     }
-};
+}
