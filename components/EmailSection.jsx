@@ -1,146 +1,96 @@
 "use client";
-import React, { useState } from "react";
-import GithubIcon from "../public/github-icon.svg";
-import LinkedinIcon from "../public/linkedin-icon.svg";
-import Link from "next/link";
+import React, { useState, useTransition } from "react";
 import Image from "next/image";
+import TabButton from "./TabButton";
 
-const EmailSection = () => {
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
-    const [successMessage, setSuccessMessage] = useState('');
+const TAB_DATA = [
+    {
+        title: "Skills",
+        id: "skills",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Sequelize</li>
+                <li>MongoDB</li>
+                <li>Mongoose</li>
+            </ul>
+        ),
+    },
+    {
+        title: "Education",
+        id: "education",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Fullstack Academy of Code</li>
+                <li>University of California, Santa Cruz</li>
+            </ul>
+        ),
+    },
+    {
+        title: "Certifications",
+        id: "certifications",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>AWS Cloud Practitioner</li>
+                <li>Google Professional Cloud Developer</li>
+            </ul>
+        ),
+    },
+];
 
-    const sendMail = async (e) => {
-        e.preventDefault();
-        const response = await fetch('/api/send', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify({
-                email,
-                subject,
-                message
-            })
+const AboutSection = () => {
+    const [tab, setTab] = useState("skills");
+    const [isPending, startTransition] = useTransition();
+
+    const handleTabChange = (id) => {
+        startTransition(() => {
+            setTab(id);
         });
-
-        const responseData = await response.json();
-
-        if (response.ok) {
-            setSuccessMessage("Message successfully sent");
-            setEmail('');
-            setSubject('');
-            setMessage('');
-
-            setTimeout(() => {
-                setSuccessMessage('');
-            }, 10000);
-        } else {
-            setSuccessMessage("Failed to send message");
-        }
-
-        console.log(responseData);
-    }
-
+    };
 
     return (
-        <section
-            className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
-            <div>
-                <h5 className="text-xl font-bold text-black my-2">
-                    Reach Out To Me!
-                </h5>
-                <p className="text-black mb-4 max-w-md">
-                    {" "}
-                    I&apos;m always seeking new opportunities! Whether you have a question or just want to say hi, my inbox is always
-                    open.
-                </p>
-                <div className="socials flex flex-row gap-2">
-                    <Link href="https://github.com/DibsTHEgreat">
-                        <Image src={GithubIcon} alt="Github Icon" />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/divya-pateliya-2362b7234/">
-                        <Image src={LinkedinIcon} alt="Linkedin Icon" />
-                    </Link>
+        <section className="text--colors_default">
+            <div className="gap-8 items-center py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
+                <Image src="/images/about-image.png" width={500} height={500} />
+                <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+                    <h2 className="text-4xl font-bold text--colors_default mb-4">About Me</h2>
+                    <p className="text--colors_default text-base md:text-lg">
+                        I am a full stack web developer with a passion for creating
+                        interactive and responsive web applications. I have experience
+                        working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
+                        Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+                        looking to expand my knowledge and skill set. I am a team player and
+                        I am excited to work with others to create amazing applications.
+                    </p>
+                    <div className="flex flex-row justify-start mt-8">
+                        <TabButton
+                            selectTab={() => handleTabChange("skills")}
+                            active={tab === "skills"}
+                        >
+                            Skills
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("education")}
+                            active={tab === "education"}
+                        >
+                            Education
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("certifications")}
+                            active={tab === "certifications"}
+                        >
+                            Certifications
+                        </TabButton>
+                    </div>
+                    <div className="mt-8">
+                        {TAB_DATA.find((t) => t.id === tab).content}
+                    </div>
                 </div>
-            </div>
-            <div className="z-10">
-                <form className="flex flex-col" onSubmit={sendMail}>
-                    {successMessage && (
-                        <div className={successMessage === "Message successfully sent" ? "text-green-500" : "text-red-500"}>
-                            {successMessage}
-                        </div>
-                    )}
-                    <div className="mb-6">
-                        <label
-                            htmlFor="email"
-                            className="text-black block mb-2 text-sm font-medium"
-                        >
-                            Your email
-                        </label>
-                        <input
-                            name="email"
-                            type="email"
-                            id="email"
-                            required
-                            value={email}
-                            onChange={(e) => {
-                                setEmail(e.target.value)
-                            }}
-                            className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                            placeholder="johndoe@gmail.com"
-                        />
-                    </div>
-                    <div className="mb-6">
-                        <label
-                            htmlFor="subject"
-                            className="text-black block text-sm mb-2 font-medium"
-                        >
-                            Subject
-                        </label>
-                        <input
-                            name="subject"
-                            type="text"
-                            id="subject"
-                            required
-                            value={subject}
-                            onChange={(e) => {
-                                setSubject(e.target.value)
-                            }}
-                            className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                            placeholder="Hello"
-                        />
-                    </div>
-                    <div className="mb-6">
-                        <label
-                            htmlFor="message"
-                            className="text-black block text-sm mb-2 font-medium"
-                        >
-                            Message
-                        </label>
-                        <textarea
-                            name="message"
-                            id="message"
-                            required
-                            value={message}
-                            onChange={(e) => {
-                                setMessage(e.target.value)
-                            }}
-                            className="bg-white border border-[#33353F] placeholder-[#9CA2A9] text-black text-sm rounded-lg block w-full p-2.5"
-                            placeholder="Let's talk about..."
-                        />
-                    </div>
-                    <button
-                        type="submit"
-                        className="bg-gray-100 hover:bg-gray-300 text-black font-medium py-2.5 px-5 rounded-lg w-full"
-                    >
-                        Send Message
-                    </button>
-                </form>
             </div>
         </section>
     );
 };
 
-export default EmailSection;
+export default AboutSection;
