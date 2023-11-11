@@ -1,38 +1,29 @@
-import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer'
+// import { EmailTemplate } from '../../../components/EmailTemplate';
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
-export async function POST(request) {
+const resend = new Resend(process.env.RESEND_API_KEY);
+const fromEmail = process.env.FROM_EMAIL;
+
+export async function POST(req, res) {
+    const { email, subject, message } = await req.json();
+    console.log(email, subject, message);
     try {
-        const { email, subject, message } = await request.json();
-
-        const EMAIL_ADDRESS = process.env.EMAIL_ADDRESS;
-        const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL;
-        const EMAIL_PASSWORD = process.env.EMAIL_PASSWORD;
-
-        const transporter = nodemailer.createTransport({
-            service: process.env.EMAIL_ADDRESS,
-            auth: {
-                user: EMAIL_ADDRESS,
-                pass: EMAIL_PASSWORD
-            }
-        })
-
-        const mailOption = {
-            from: EMAIL_ADDRESS,
-            to: RECIPIENT_EMAIL,
+        const data = await resend.emails.send({
+            from: fromEmail,
+            to: [fromEmail, email],
             subject: subject,
-            html: `
-        <h3>Hello Ishwor</h3>
-        <li> title: ${subject}</li>
-        <li> email: ${email}</li>
-        <li> message: ${message}</li> 
-        `
-        }
-
-        await transporter.sendMail(mailOption)
-
-        return NextResponse.json({ message: "Email Sent Successfully" }, { status: 200 })
+            react: (
+                <>
+                    <h1>{subject}</h1>
+                    <p>Thank you for contacting us!</p>
+                    <p>New message submitted:</p>
+                    <p>{message}</p>
+                </>
+            ),
+        });
+        return NextResponse.json(data);
     } catch (error) {
-        return NextResponse.json({ message: "Failed to Send Email" }, { status: 500 })
+        return NextResponse.json({ error });
     }
 }
