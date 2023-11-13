@@ -3,8 +3,8 @@ import Navbar from '../components/NavBar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
-// import EmailSection from "../components/EmailSection";
-// import Footer from "../components/Footer";
+import EmailSection from "../components/EmailSection";
+import Footer from "../components/Footer";
 
 
 function Home() {
@@ -15,9 +15,9 @@ function Home() {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
-      {/* <EmailSection /> */}
+      <EmailSection />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
