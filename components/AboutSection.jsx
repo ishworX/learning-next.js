@@ -9,12 +9,12 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className="list-disc pl-2">
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PostgreSQL</li>
-                <li>Sequelize</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Javascript </li>
+                <li>SQL</li>
+                <li>Html & CSS</li>
+                <li>Next.js & React.js </li>
             </ul>
         ),
     },
@@ -23,8 +23,7 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className="list-disc pl-2">
-                <li>Fullstack Academy of Code</li>
-                <li>University of California, Santa Cruz</li>
+                <li>University Of Lethbridge</li>
             </ul>
         ),
     },
@@ -33,8 +32,8 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className="list-disc pl-2">
-                <li>AWS Cloud Practitioner</li>
-                <li>Google Professional Cloud Developer</li>
+                <li>Linux Commands and Shell Scripting by IBM</li>
+                <li>Exploring Machine Learning & AI using Python by Infosys</li>
             </ul>
         ),
     },
@@ -57,12 +56,7 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text--colors_default mb-4">About Me</h2>
                     <p className="text--colors_default text-base md:text-lg">
-                        I am a full stack web developer with a passion for creating
-                        interactive and responsive web applications. I have experience
-                        working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-                        Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-                        looking to expand my knowledge and skill set. I am a team player and
-                        I am excited to work with others to create amazing applications.
+                        I am an enthusiastic Computer Science learner dedicated to cultivating knowledge through hands-on experiences. My passion lies in creating purposeful projects that have a lasting impact on the world. Whether it's diving into the intricacies of web development, exploring the realms of artificial intelligence, or tackling complex algorithms, I believe in learning by doing. I am on a continuous journey of exploration, seeking opportunities to innovate and contribute to the ever-evolving landscape of technology.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton

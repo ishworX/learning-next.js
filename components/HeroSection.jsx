@@ -3,17 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
-const downloadCV = () => {
-    const cvUrl = "/pdf/ishwor.pdf";
+const getPortfolio = () => {
+    const portfolioUrl = "https://www.whoisrabbit.com";
+    window.location.href = portfolioUrl;
+};
 
-    const anchor = document.createElement("a");
-    anchor.href = cvUrl;
-    anchor.target = "_blank";
-    anchor.download = "ishwor-Resume.pdf";
-
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
+const getProjects = () => {
+    const projectSection = "#projects";
+    window.location.href = projectSection;
 };
 
 const HeroSection = () => {
@@ -21,19 +18,19 @@ const HeroSection = () => {
         <section className="grid grid-cols-1 lg:grid-cols-12 my-4 md:pb-20">
             <div className="col-span-7 flex flex-col justify-center items-center lg:place-items-start">
                 <h1 className="text-colors_default max-w-2xl mb-4 md:text-6xl text-3xl font-extrabold pb-11">
-                    <span className="text-colors_default text-4xl md:text-6xl bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">
-                        Hello, I&apos;m{" "}
+                    <span className="text--colors_primary text-4xl md:text-6xl bg-clip-text bg-gradient-to-r from-blue-400 to-blue-500">
+                        Hello, I&apos;m{" "} Ishwor, a
                     </span>{" "}
                     <br></br>
                     <TypeAnimation
                         sequence={[
-                            "A Student",
+                            "Student",
                             1000,
-                            "A Software Developer",
+                            "Software Developer",
                             1000,
-                            "A Web Developer",
+                            "Web Developer",
                             1000,
-                            "A Discord Bot Developer",
+                            "Discord Bot Developer",
                             1000,
                         ]}
                         wrapper="span"
@@ -47,19 +44,19 @@ const HeroSection = () => {
                 </p>
                 <div>
                     <button
-                        className="m-4 bg-gradient-to-br from-blue-300 via-purple-500 to-blue-600 px-1 py-1  text-white rounded-full"
-                        onClick={downloadCV}
+                        className="m-4 bg-[#e74f4f] px-1 py-1  text-white rounded-full"
+                        onClick={getProjects}
                     >
                         <span className="block rounded-full px-5 py-2">
                             My Projects
                         </span>
                     </button>
                     <button
-                        className="m-4 bg-gradient-to-br from-blue-300 via-purple-500 to-blue-600 px-1 py-1  text-white rounded-full"
-                        onClick={downloadCV}
+                        className="m-4 bg-[#e74f4f] px-1 py-1  text-white rounded-full"
+                        onClick={getPortfolio}
                     >
                         <span className="block rounded-full px-5 py-2">
-                            Download CV
+                            Discord Profile
                         </span>
                     </button>
                 </div>

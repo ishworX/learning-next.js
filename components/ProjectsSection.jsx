@@ -6,21 +6,21 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
     {
         id: 1,
-        title: "React Portfolio Website",
+        title: "Indian Restaurant Website",
         description: "Project 1 description",
         image: "/images/projects/1.png",
         tag: ["All", "Web"],
     },
     {
         id: 2,
-        title: "Potography Portfolio Website",
+        title: "Discord Portfolio",
         description: "Project 2 description",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
     },
     {
         id: 3,
-        title: "E-commerce Application",
+        title: "Discord Music Bot",
         description: "Project 3 description",
         image: "/images/projects/3.png",
         tag: ["All", "Web"],
@@ -59,7 +59,7 @@ const ProjectsSection = () => {
     };
 
     return (
-        <>
+        <section id="projects">
             <h2 className="text-center text-4xl font-bold text--colors_default mt-4 mb-8 md:mb-12">
                 My Projects
             </h2>
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
                     />
                 ))}
             </div>
-        </>
+        </section>
     );
 };
 
