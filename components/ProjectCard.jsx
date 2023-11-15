@@ -21,20 +21,20 @@ export const ProjectCard = ({ previewImage, title, description, images, visitLin
                 style={{ background: `url(${previewImage})`, backgroundSize: 'cover' }}
             >
             </div>
-            <div className="text-black rounded-b-xl bg-gradient-to-b from-blue-300 to-blue-400 py-6 px-4" style={{ flex: 1 }}>
+            <div className="text--colors_default rounded-b-xl bg-default px-4" style={{ flex: 1 }}>
                 <div>
                     <h5 className="text-xl font-semibold mb-2 text-center">{title}</h5>
-                    <p className="text-black">{description}</p>
+                    <p className="text--colors_default">{description}</p>
                 </div>
                 <div className="flex justify-center mt-4 space-x-4">
                     <button
-                        className="bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-600 text-white py-2 px-4 rounded-md"
+                        className="bg-[#e74f4f] hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-600 text-white py-2 px-4 rounded-md"
                         onClick={openModal}
                     >
                         Preview
                     </button>
                     <a href={visitLink} target="_blank" rel="noopener noreferrer">
-                        <button className="bg-gradient-to-r from-blue-400 to-blue-600 hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-600 text-white py-2 px-4 rounded-md">
+                        <button className="bg-[#e74f4f] hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-600 text-white py-2 px-4 rounded-md">
                             Visit Site
                         </button>
                     </a>

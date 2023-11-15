@@ -14,8 +14,8 @@ const projectsData = [
     },
     {
         id: 2,
-        title: "Discord Portfolio",
-        description: "Portfilio website for a Discord Bot Developer with live profile tracking with Laynard api and web socket. It also has Linktree and projects portfolio.",
+        title: "Linktree Portfolio Website",
+        description: "Portfilio website for a Discord Bot Developer with live profile tracking with HTML5, CSS3, JavaScript, Bootstrap, Laynard api and web socket. It also has Linktree and projects portfolio.",
         link: "https://whoisrabbit.com/linktree",
         previewImage: "/images/rabbit-2.png",
         images: ["/images/projects/test5.png", "/images/projects/test2.png", "/images/projects/test6.png", "/images/projects/test7.png"],
