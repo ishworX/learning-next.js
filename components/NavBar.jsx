@@ -9,16 +9,16 @@ import dynamic from 'next/dynamic';
 
 const navLinks = [
     {
-        title: "Home",
-        path: "/",
+        title: "Discord Bots",
+        path: "https://whoisrabbit.com/projects",
     },
     {
-        title: "About",
-        path: "#about",
+        title: "LinkedIn",
+        path: "https://www.linkedin.com/in/ishwor-tandon-42a4351b9/",
     },
     {
-        title: "Projects",
-        path: "#projects",
+        title: "GitHub",
+        path: "https://github.com/ishworX",
     },
     {
         title: "Contact",
