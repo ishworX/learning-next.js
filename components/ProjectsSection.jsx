@@ -1,97 +1,63 @@
 "use client";
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
 
 const projectsData = [
     {
         id: 1,
         title: "Indian Restaurant Website",
-        description: "Project 1 description",
-        image: "/images/projects/1.png",
+        description: "Indian Restaurant website developed utilizing HTML5, CSS3, JavaScript and ReactJS frameworks, to meet project specifications and ensure responsiveness across various devices and web browsers.",
+        link: "https://newtasteofindia.ca/",
+        previewImage: "/images/newtaste1.jpg",
+        images: ["/images/newtaste1.jpg", "/images/newtaste2.jpg", "/images/newtaste3.jpg"],
         tag: ["All", "Web"],
     },
     {
         id: 2,
         title: "Discord Portfolio",
-        description: "Project 2 description",
-        image: "/images/projects/2.png",
-        tag: ["All", "Web"],
+        description: "Portfilio website for a Discord Bot Developer with live profile tracking with Laynard api and web socket. It also has Linktree and projects portfolio.",
+        link: "https://whoisrabbit.com/linktree",
+        previewImage: "/images/rabbit-2.png",
+        images: ["/images/projects/test5.png", "/images/projects/test2.png", "/images/projects/test6.png", "/images/projects/test7.png"],
+        tag: ["All", "Software"],
     },
     {
         id: 3,
-        title: "Discord Music Bot",
-        description: "Project 3 description",
-        image: "/images/projects/3.png",
-        tag: ["All", "Web"],
-    },
-    {
-        id: 4,
-        title: "Food Ordering Application",
-        description: "Project 4 description",
-        image: "/images/projects/4.png",
-        tag: ["All", "Mobile"],
-    },
-    {
-        id: 5,
-        title: "React Firebase Template",
-        description: "Authentication and CRUD operations",
-        image: "/images/projects/5.png",
-        tag: ["All", "Web"],
-    },
-    {
-        id: 6,
-        title: "Full-stack Roadmap",
-        description: "Project 5 description",
-        image: "/images/projects/6.png",
-        tag: ["All", "Web"],
+        title: "Verified Discord Bots",
+        description: "Elevated community server engagement by developing and maintaining Discord Bots, including Groove for music, TNN Utils for moderation, and Decentral AI for cryptocurrency.",
+        link: "https://whoisrabbit.com/projects",
+        previewImage: "/images/Bots.png",
+        images: ["/images/Groove.png", "/images/projects/test4.png"],
+        tag: ["All", "Software"],
     },
 ];
-const ProjectsSection = () => {
+const ProjectSection = () => {
     const [tag, setTag] = useState("All");
 
     const filteredProjects = projectsData.filter((project) =>
         project.tag.includes(tag)
     );
 
-    const handleTagChange = (newTag) => {
-        setTag(newTag);
-    };
 
     return (
-        <section id="projects">
+        <>
             <h2 className="text-center text-4xl font-bold text--colors_default mt-4 mb-8 md:mb-12">
-                My Projects
+                See What I&apos;m Working On
             </h2>
-            <div className="flex flex-row justify-center items-center gap-2 text--colors_default my-6">
-                <ProjectTag
-                    name="All"
-                    onClick={handleTagChange}
-                    isSelected={tag === "All"}
-                />
-                <ProjectTag
-                    name="Web"
-                    onClick={handleTagChange}
-                    isSelected={tag === "Web"}
-                />
-                <ProjectTag
-                    name="Mobile"
-                    onClick={handleTagChange}
-                    isSelected={tag == "Mobile"}
-                />
-            </div>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
                 {filteredProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
                         description={project.description}
-                        imgUrl={project.image}
+                        visitLink={project.link}
+                        previewImage={project.previewImage}
+                        images={project.images}
                     />
                 ))}
             </div>
-        </section>
+        </>
     );
 };
 
-export default ProjectsSection;
+export default ProjectSection;
