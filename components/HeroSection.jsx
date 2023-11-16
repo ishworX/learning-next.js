@@ -61,10 +61,17 @@ const HeroSection = () => {
                     </button>
                 </div>
             </div>
-            {/* <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:pt-12">
-                <div className="bg-gradient-to-b from-blue-200 to-blue-500 lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] shadow-2xl rounded-full relative">
+            <div className="col-span-5 place-self-center mt-4 lg:mt-0 lg:pt-12">
+                <div className="bg--default lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] shadow-2xl rounded-full relative">
+                    <Image
+                        src="/images/code.png"
+                        alt="hero image"
+                        className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        width={300}
+                        height={300}
+                    />
                 </div>
-            </div> */}
+            </div>
         </section>
     );
 };
