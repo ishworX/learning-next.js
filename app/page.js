@@ -7,3 +7,6 @@ export default function Home() {
     </main>
   );
 }
+
+
+// Just maintiaining the streaks
