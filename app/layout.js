@@ -1,4 +1,4 @@
-import Nunito from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -19,3 +19,6 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// Was failed to complile 
+// Numito font is not available
