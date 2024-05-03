@@ -19,6 +19,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-// Was failed to complile 
-// Numito font is not available

@@ -8,5 +8,3 @@ export default function Home() {
   );
 }
 
-
-// Just maintiaining the streaks
