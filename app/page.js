@@ -5,7 +5,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       Check !!! 
 
-      Happy Birthday to me! Day 2
+      Happy Birthday to me! Day 3
+      // I am just slacking now
 
     </main>
   );
