@@ -5,6 +5,7 @@ export default function Home() {
     <main className="">
       Home
       Check?
+      Streak maintain i guess?
     </main>
   );
 }
