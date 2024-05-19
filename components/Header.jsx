@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 import Nav from './Nav'
+import ThemeToggler from './ThemeToggler'
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
       <Logo />
       {/* Nav bar and buttons will go here */}
       <Nav />
+      <ThemeToggler />
     </header>
   )
 }
