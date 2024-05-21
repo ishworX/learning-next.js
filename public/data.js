@@ -1,4 +1,4 @@
-// icons
+// Please check 17:29 
 import {
   HiHome,
   HiUser,
@@ -37,21 +37,9 @@ export const LINKS = [
     offset: -50,
   },
   {
-    title: "about",
-    icon: <HiUser />,
-    path: "/about",
-    offset: -50,
-  },
-  {
-    title: "work",
-    icon: <HiSquare2Stack />,
-    path: "/work",
-    offset: -50,
-  },
-  {
-    title: "testimonials",
+    title: "portfolio",
     icon: <HiChatBubbleBottomCenterText />,
-    path: "/testimonials",
+    path: "/portfolio",
     offset: -50,
   },
   {
