@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={'h-[2000px] ${nunito.className}'}>
+      <body className={nunito.className}>
       <Header/>
       {children}
       </body>
