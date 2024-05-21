@@ -1,6 +1,6 @@
 import { LINKS } from '@/public/data'
 import { motion } from 'framer-motion'
-import { Link } from 'lucide-react'
+import Link  from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
