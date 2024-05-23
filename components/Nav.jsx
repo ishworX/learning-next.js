@@ -17,7 +17,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
               initial={{ y: '-1000%' }}
               animate={{ y: 0 }}
               transition={{ type: 'tween' }}
-              layoutId='undrline'
+              layoutId='underline'
               className={`${underlineStyles}`}
             >
             </motion.span>)}
