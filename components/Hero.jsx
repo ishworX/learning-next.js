@@ -4,7 +4,10 @@ const Hero = () => {
   return (
     <div className=''>
       Hero</div>
-      // Just maintaing streaks
+     
+     // Plans for the hero sectiom
+     // Get a portrait for the hero sdction 
+     // Finish setting up linkedIn
   )
 }
 
