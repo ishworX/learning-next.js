@@ -6,12 +6,14 @@ import { Typewriter } from 'react-simple-typewriter'
 
 //framer motion
 import {motion} from 'framer-motion'
-import fadeIn from '@/components/ui/Variants'
+import fadeIn from '@/components/ui/Varient'
 
 const Hero = () => {
   return (
-    <div className=''>
-      Hero</div>
+    <section className="padding-container max-container page flex flex-col gap-4 flexCenter pb-32 py-20 lg:flex-row lg:gap-32">
+    Hero
+
+    </section>
 
   )
 }
