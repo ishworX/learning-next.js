@@ -15,4 +15,4 @@ const SocialIcons = () => {
   )
 }
 
-export default SocialIcons
+export default SocialIcons 
