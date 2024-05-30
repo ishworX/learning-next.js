@@ -1,17 +1,34 @@
 import React from 'react'
-import SocialIcons from '@/components/ui/SocialIcons'
-import Image from 'next/image'
-// Type writer
-import { Typewriter } from 'react-simple-typewriter'
+import { Button } from './ui/button'
+import { MoveRight } from 'lucide-react'
 
-//framer motion
-import {motion} from 'framer-motion'
-import fadeIn from '@/components/ui/Varient'
 
 const Hero = () => {
   return (
-    <section className="padding-container max-container page flex flex-col gap-4 flexCenter pb-32 py-20 lg:flex-row lg:gap-32">
-    Hero
+    <section>
+      <div>
+        {/* Left Side of the hero section! */}
+        <div>
+          <h1>
+            Hello! my name is Ishwor and I am a student at the University. 
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae facilis, facere expedita tenetur perspiciatis. Enim tenetur quis laboriosam suscipit.
+          </p>
+          <div>
+
+            <Button className='gap-x-2 shadow-xl'>
+                Contact Me <MoveRight size={20}/>
+            </Button>
+
+            <Button className='shadow-xl bg-black hover:bg-[#222] text-white'>
+              Download Resume
+            </Button>
+
+          </div>
+        </div>
+        
+        </div>
 
     </section>
 
