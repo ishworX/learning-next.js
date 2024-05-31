@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
 import { MoveRight } from 'lucide-react'
+import SocialIcons from './ui/SocialIcons'
 
 
 const Hero = () => {
@@ -24,7 +25,9 @@ const Hero = () => {
             <Button className='shadow-xl bg-black hover:bg-[#222] text-white'>
               Download Resume
             </Button>
-
+          </div>
+          <div>
+          <SocialIcons />
           </div>
         </div>
         
