@@ -26,6 +26,7 @@ const Hero = () => {
               Download Resume
             </Button>
           </div>
+          
           <div>
           <SocialIcons />
           </div>
