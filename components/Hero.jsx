@@ -3,12 +3,13 @@ import { Button } from './ui/button'
 import { MoveRight } from 'lucide-react'
 import SocialIcons from './ui/SocialIcons'
 import Image from 'next/image'
+import Badge from './ui/badge'
 
 
 const Hero = () => {
   return (
     <section className='max-padd-container py-20 bg-[#fdf3fb] dark:bg-transparent'>
-      <div className='flexcenter gap-24 flex-col xl:flex-row'>
+      <div className='flexCenter gap-24 flex-col xl:flex-row'>
         {/* Left Side of the hero section! */}
         <div className='flex flex-1 flex-col pt-12 xl:pt-32'>
           <h1 className='h1 !font-extrabold'>
@@ -34,7 +35,7 @@ const Hero = () => {
         </div>
 
         {/* Right part of the Section */}
-        <div>
+        <div className='flex flex-1 relative z-10 top-12'>
           <div>
             <Image src={'/bg.png'} height={488} width={488} priority alt = 'myPortrait' className='drop-shadow-sm'/>
           </div>
