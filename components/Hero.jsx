@@ -7,18 +7,18 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section>
-      <div>
+    <section className='max-padd-container py-20 bg-[#fdf3fb] dark:bg-transparent'>
+      <div className='flexcenter gap-24 flex-col xl:flex-row'>
         {/* Left Side of the hero section! */}
-        <div>
-          <h1>
+        <div className='flex flex-1 flex-col pt-12 xl:pt-32'>
+          <h1 className='h1 !font-extrabold'>
             Hello! my name is Ishwor and I am a student at the University. 
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae facilis, facere expedita tenetur perspiciatis. Enim tenetur quis laboriosam suscipit.
           </p>
-          <div>
 
+          <div className='mt-6 flex gap-4'>
             <Button className='gap-x-2 shadow-xl'>
                 Contact Me <MoveRight size={20}/>
             </Button>
@@ -28,7 +28,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div>
+          <div className='mt-20'>
           <SocialIcons />
           </div>
         </div>
@@ -40,7 +40,11 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Photo badges */}
+        <div className='hidden xl:flex'>
+          <Badge/>
         </div>
+      </div>
 
     </section>
 
