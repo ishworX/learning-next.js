@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './ui/button'
 import { MoveRight } from 'lucide-react'
 import SocialIcons from './ui/SocialIcons'
+import Image from 'next/image'
 
 
 const Hero = () => {
@@ -26,12 +27,19 @@ const Hero = () => {
               Download Resume
             </Button>
           </div>
-          
+
           <div>
           <SocialIcons />
           </div>
         </div>
-        
+
+        {/* Right part of the Section */}
+        <div>
+          <div>
+            <Image src={'/bg.png'} height={488} width={488} priority alt = 'myPortrait' className='drop-shadow-sm'/>
+          </div>
+        </div>
+
         </div>
 
     </section>
