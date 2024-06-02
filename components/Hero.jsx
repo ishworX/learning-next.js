@@ -4,6 +4,7 @@ import { MoveRight } from 'lucide-react'
 import SocialIcons from './ui/SocialIcons'
 import Image from 'next/image'
 import Badge from './ui/badge'
+import { FaFigma } from 'react-icons/fa'
 
 
 const Hero = () => {
@@ -39,13 +40,14 @@ const Hero = () => {
           <div>
             <Image src={'/bg.png'} height={488} width={488} priority alt = 'myPortrait' className='drop-shadow-sm'/>
           </div>
-        </div>
 
         {/* Photo badges */}
         <div className='hidden xl:flex'>
-          <Badge/>
+          <Badge 
+          containerStyles={'absolute top-[60%] left-0'} icon={<FaFigma /> }/>
         </div>
       </div>
+    </div>
 
     </section>
 
