@@ -14,10 +14,10 @@ const Hero = () => {
         {/* Left Side of the hero section! */}
         <div className='flex flex-1 flex-col pt-12 xl:pt-32'>
           <h1 className='h1 !font-extrabold'>
-            Hello! my name is Ishwor and I am a student at the University. 
+            Hello, my name is Ishwor Tandon
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos recusandae facilis, facere expedita tenetur perspiciatis. Enim tenetur quis laboriosam suscipit.
+            I am a full time student at University of Lethbridge studying computer science and Business Management with a minor in Mathematics.
           </p>
 
           <div className='mt-6 flex gap-4'>
