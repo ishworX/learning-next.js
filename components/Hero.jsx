@@ -4,7 +4,8 @@ import { MoveRight } from 'lucide-react'
 import SocialIcons from './ui/SocialIcons'
 import Image from 'next/image'
 import Badge from './ui/badge'
-import { FaFigma } from 'react-icons/fa'
+import { FaFigma, FaReact, FaUsers } from 'react-icons/fa'
+import { SiNextdotjs } from 'react-icons/si'
 
 
 const Hero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
             Hello, my name is Ishwor Tandon
           </h1>
           <p>
-            I am a full time student at University of Lethbridge studying computer science and Business Management with a minor in Mathematics.
+            I am a full time student at University of Lethbridge studying computer science and Business Management with a minor in Mathematics. My passion lies in the realms of machine learning, data science, and full-stack development. I am dedicated to pursuing excellence in every endeavor.
           </p>
 
           <div className='mt-6 flex gap-4'>
@@ -45,6 +46,18 @@ const Hero = () => {
         <div className='hidden xl:flex'>
           <Badge 
           containerStyles={'absolute top-[60%] left-0'} icon={<FaFigma /> }/>
+          <Badge 
+          containerStyles={'absolute -top-5 right-[45%]'} icon={<FaReact /> }/>
+          <Badge 
+          containerStyles={'absolute bottom-[10%] right-[27%]'} icon={<SiNextdotjs /> }/>
+          <Badge 
+          containerStyles={'absolute top-[10%] -left-12 !h-[55px]'} icon={<FaUsers />}
+          badgeText={'Projects Completed'}
+          endCountNum={50}
+          endCountText={'+'}
+          />
+          <Badge 
+          containerStyles={'absolute top-[22%] right-0'} reviewCount={666}/>
         </div>
       </div>
     </div>
