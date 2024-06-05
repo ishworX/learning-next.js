@@ -21,9 +21,9 @@ const Badge = ({ containerStyles, icon, endCountNum, endCountText, badgeText, re
       </div>}
       {/* Recent project card */}
       <div className='flex gap-x-4'>
-        <Image src={'/project.png'} alt='newtasteofIndia' height={41} width={41} className='rounded-full' />
+        <Image src={'/bg.png'} alt='mypfp' height={41} width={41} className='rounded-full' />
         <div className='flex flex-col'>
-          <span className='bold-15 text-black'> New Taste Of India 
+          <span className='bold-15 text-black'> Ishwor Tandon 
           </span>
 
           <span className='flexCenter text-xs text-primary dark:text-black'>
@@ -39,9 +39,19 @@ const Badge = ({ containerStyles, icon, endCountNum, endCountText, badgeText, re
         </div>
       </div>
       {/* Details on the Card */}
+      <div>
+        <h4 className='bold-15 my-2 text-black'> Recent Work </h4>
+        <div className='flex-col flex gap-3'>
+          <div className='flexCenter gap-x-2 text-black'>
+            <span>NTOI</span>
+            <div>
+              <span>New Taste Of India</span>
+              <p>Full stack Indian Restaurant</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
   )
 }
 
