@@ -65,3 +65,7 @@ const Badge = ({ containerStyles, icon, endCountNum, endCountText, badgeText, re
 }
 
 export default Badge
+
+
+// Looks like the badge is not working or i messed up somerhwere!
+// Need to check all  the div classes and fix the badge section
