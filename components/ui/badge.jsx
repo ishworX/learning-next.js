@@ -43,10 +43,19 @@ const Badge = ({ containerStyles, icon, endCountNum, endCountText, badgeText, re
         <h4 className='bold-15 my-2 text-black'> Recent Work </h4>
         <div className='flex-col flex gap-3'>
           <div className='flexCenter gap-x-2 text-black'>
-            <span>NTOI</span>
+            <span className='bg-[#eaeaea] h-8 w-8 flexCenter rounded-full'>NTOI</span>
+            <div className='flex flex-col'>
+              <span className='text-sm font-bold leading-none'>New Taste Of India</span>
+              <p className='text-xs'>Full Stack Restaurant Website</p>
+            </div>
+          </div>
+          <div className='flexCenter gap-x-2 text-black'>
+            <span>TNN</span>
             <div>
-              <span>New Taste Of India</span>
-              <p>Full stack Indian Restaurant</p>
+              <span className='text-sm font-bold leading-none'> Namaste Nepal Discord </span>
+              <p className='text-xs'>
+                Discord Nepal Official Website
+              </p>
             </div>
           </div>
         </div>
