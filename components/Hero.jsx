@@ -68,7 +68,7 @@ const Hero = () => {
           <h1 className='h1 !font-extrabold'>
             Hello,I am currently fixing a bug in my Code kindly check my Previous version of my Portfolio. Sorry for the inconvenience caused. 
           </h1>
-          <a href='https://www.google.com'>
+          <a href='https://github.com/ishworX/my-portfolio/tree/V2-of-my-portfolio'>
           <Button className='gap-x-2 shadow-xl' >
                 Check Older Version <MoveRight size={20}/>
           </Button>
