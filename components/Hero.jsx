@@ -3,9 +3,9 @@ import { Button } from './ui/button'
 import { MoveRight } from 'lucide-react'
 import SocialIcons from './ui/SocialIcons'
 import Image from 'next/image'
-import Badge from './ui/badge'
-import { FaFigma, FaReact, FaUsers } from 'react-icons/fa'
-import { SiNextdotjs } from 'react-icons/si'
+import Badge from './Badge'
+import { FaPython, FaReact, FaUsers } from 'react-icons/fa'
+import { SiNextdotjs, SiCplusplus } from 'react-icons/si'
 
 const handleClick = () => {
   window.location.href = 'https://www.google.com';
@@ -18,7 +18,7 @@ const Hero = () => {
         {/* Left Side of the hero section! */}
         <div className='flex flex-1 flex-col pt-12 xl:pt-32'>
           <h1 className='h1 !font-extrabold'>
-            Hello, my name is Ishwor Tandon
+            Hello, my name is Ishwor 
           </h1>
           <p>
             I am a full time student at University of Lethbridge studying computer science and Business Management with a minor in Mathematics. My passion lies in the realms of machine learning, data science, and full-stack development. I am dedicated to pursuing excellence in every endeavor.
@@ -42,13 +42,13 @@ const Hero = () => {
         {/* Right part of the Section */}
         <div className='flex flex-1 relative z-10 top-12'>
           <div>
-            <Image src={'/bg.png'} height={488} width={488} priority alt = 'myPortrait' className='drop-shadow-sm'/>
+            <Image src={'/hero.png'} height={488} width={488} priority alt = 'myPortrait' className='drop-shadow-sm'/>
           </div>
 
         {/* Photo badges */}
         <div className='hidden xl:flex'>
           <Badge 
-          containerStyles={'absolute top-[60%] left-0'} icon={<FaFigma /> }/>
+          containerStyles={'absolute top-[60%] left-0'} icon={<SiCplusplus /> }/>
           <Badge 
           containerStyles={'absolute -top-5 right-[45%]'} icon={<FaReact /> }/>
           <Badge 
