@@ -28,12 +28,12 @@ const About = () => {
                         </TabsList>
                         {/* tabs content */}
                         <div className="pt-12 xl:pt-3 pl-3">
-                        <TabsContent value='skills'>
+                            <TabsContent value='skills'>
                                 <div className="flex flex-col gap-4">
                                     <LanguagesProgress />
                                 </div>
-                        </TabsContent>
-                            
+                            </TabsContent>
+
                             {/* education */}
                             <TabsContent value='education'>
                                 <div className="flex flex-col gap-4">
@@ -59,10 +59,10 @@ const About = () => {
                             </TabsContent>
                             {/* skills */}
                             <TabsContent value='intro'>
-                                <h4 className="bold-20 uppercase pb-1">Hola! My Name Is James Parker!</h4>
-                                <p className="max-w-md">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, dolor autem id et consequuntur possimus iure vero deleniti quo ab eius explicabo.</p>
+                                <h4 className="bold-20 uppercase pb-1">Hola! My Name Is Ishwor Tandon!</h4>
+                                <p className="max-w-md">This will be the paragraph about myself.</p>
                                 {/* accordion */}
-                                <Accordion sliceCount={(0, 3)}/>
+                                <Accordion sliceCount={(0, 3)} />
                             </TabsContent>
                         </div>
                     </Tabs>
