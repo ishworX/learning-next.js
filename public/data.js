@@ -50,26 +50,22 @@ export const ACCORDION = [
 
 export const EDUCATION = [
   {
-    title: "Full Stack Development - ABC University, USA",
-    year: "2011",
+    title: "SPA Client Project - Calagry, Canada",
+    year: "Currently Working",
   },
   {
-    title: "FontEnd Development - ABC University, Ldondon",
-    year: "2009",
+    title: "Fullstack Developer - Taste Of India, Lethbridge",
+    year: "2019 - Present",
   },
   {
-    title: "Graphic Designing - ABC University, Turkey",
-    year: "2006",
+    title: "Freelancer - Bot Developer, Discord",
+    year: "Present",
   },
 ];
 export const EXPERINCE = [
   {
-    title: "UX/UI Designer - XYZ Company",
-    year: "2012 - 2023",
-  },
-  {
-    title: "Web Developer - XYZ Company",
-    year: "2010 - 2012",
+    title: "University Of Lethbridge",
+    year: "Anticipated – April 2025",
   },
 ];
 

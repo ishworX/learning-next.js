@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const LanguagesProgress = () => {
     const languages = [
-        { language: 'MongoDB', proficiency: 70, bgColor: '#61DAFB' },
-        { language: 'Express', proficiency: 65, bgColor: '#68A063' },
-        { language: 'React', proficiency: 75, bgColor: '#edf3d8' },
-        { language: 'Node.js', proficiency: 85, bgColor: '#61DAFB' },
+        { language: 'C++', proficiency: 70, bgColor: '#838fe9' },
+        { language: 'Python', proficiency: 55, bgColor: '#81d8d0' },
+        { language: 'JavaScript', proficiency: 65, bgColor: '#2965F1' },
+        { language: 'SQL', proficiency: 40, bgColor: '#61DAFB' },
         { language: 'Next.js', proficiency: 70, bgColor: '#ffabe7' },
-        { language: 'JavaScript', proficiency: 80, bgColor: '#2965F1' },
+        { language: 'React', proficiency: 75, bgColor: '#b068cb' },
     ];
 
     return (

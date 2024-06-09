@@ -18,7 +18,7 @@ const About = () => {
             {/* container */}
             <div className='flex flex-col xl:flex-row gap-16'>
                 {/* left */}
-                <div className='hidden xl:flexCenter flex-1 relative'>
+                <div className='xl:flexCenter flex-1 relative'>
                     <div className="stage-cube-cont" data-aos="fade-right" data-aos-anchor=".about__container" data-aos-duration="500">
                         <div className="cubespinner">
                             <div className="face1">
