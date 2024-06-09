@@ -21,25 +21,11 @@ export const LINKS = [
 export const ACCORDION = [
   {
     question: "Who are you and what do you do?",
-    answer:[<FileJson size={44} strokeWidth={0.8}/>, <FileJson size={44} strokeWidth={0.8} />],
-  },
-  {
-    question: "What motivates you in your career?",
-    answer:
-      "My passion, driving me to continually grow and excel in my career.",
-  },
-  {
-    question: "Refund policy on cancellations?",
-    answer: "Refunds available per our policy.",
-  },
-  {
-    question: "How do you approach problem-solving?",
-    answer:
-      "I tackle problems methodically, breaking them down into smaller tasks.",
+    answer:'Null',
   },
   {
     question: "What technologies are you proficient in?",
-    answer: "I'm proficient in JavaScript, HTML, CSS, and various frameworks.",
+    answer: "I'm proficient in C++, JavaScript, HTML, CSS, and various frameworks.",
   },
   {
     question: "Can you describe your communication style?",
