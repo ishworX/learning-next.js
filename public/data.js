@@ -59,19 +59,19 @@ export const EXPERINCE = [
 export const SERVICES = [
   {
     icon: <Paintbrush size={44} strokeWidth={0.8} />,
-    title: "FrontEnd Development",
+    title: "Software Development",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, aspernatur fugit! Dicta quo quidem soluta.",
   },
   {
     icon: <FileJson size={44} strokeWidth={0.8} />,
-    title: "BackEnd Development",
+    title: "Web Development",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, aspernatur fugit! Dicta quo quidem soluta.",
   },
   {
     icon: <Layers size={44} strokeWidth={0.8} />,
-    title: "FullStack Development",
+    title: "Data Science & Analytics",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, aspernatur fugit! Dicta quo quidem soluta.",
   },

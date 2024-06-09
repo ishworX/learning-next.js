@@ -66,7 +66,7 @@ const CircularProgress = ({ language, proficiency, bgColor }) => {
                     y="50%"
                     textAnchor="middle"
                     dominantBaseline="middle"
-                    fill="#555"
+                    fill="grey"
                     fontSize="6px"
                     fontWeight="bold"
                 >
