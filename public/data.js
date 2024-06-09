@@ -1,4 +1,7 @@
 import { Paintbrush, Layers, FileJson } from "lucide-react";
+import { FaPython, FaReact, FaUsers } from 'react-icons/fa'
+import { SiNextdotjs, SiCplusplus } from 'react-icons/si'
+
 
 export const LINKS = [
   {
@@ -18,8 +21,7 @@ export const LINKS = [
 export const ACCORDION = [
   {
     question: "Who are you and what do you do?",
-    answer:
-      "I'm Steve Parker, a passionate developer with a keen interest in development.",
+    answer:[<FileJson size={44} strokeWidth={0.8}/>, <FileJson size={44} strokeWidth={0.8} />],
   },
   {
     question: "What motivates you in your career?",
