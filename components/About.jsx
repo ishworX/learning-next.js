@@ -2,6 +2,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Accordion from "./Accordian";
 import { EDUCATION, EXPERINCE } from "@/public/data";
 import LanguagesProgress from "./LanguageProgress";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './ui/About.scss';
+import { faNode, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 
 
 const About = () => {
@@ -16,7 +19,28 @@ const About = () => {
             <div className='flex flex-col xl:flex-row gap-16'>
                 {/* left */}
                 <div className='hidden xl:flexCenter flex-1 relative'>
-                    <p>This is test</p>
+                    <div className="stage-cube-cont" data-aos="fade-right" data-aos-anchor=".about__container" data-aos-duration="500">
+                        <div className="cubespinner">
+                            <div className="face1">
+                                <FontAwesomeIcon icon={faNode} color="#3C873A" />
+                            </div>
+                            <div className="face2">
+                                <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+                            </div>
+                            <div className="face3">
+                                <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+                            </div>
+                            <div className="face4">
+                                <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+                            </div>
+                            <div className="face5">
+                                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+                            </div>
+                            <div className="face6">
+                                <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {/* right */}
                 <div className="flex-1 mx-auto xl:mx-0">
