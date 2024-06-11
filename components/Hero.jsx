@@ -64,16 +64,6 @@ const Hero = () => {
         </div>
       </div>
     </div>
-    <div className='flex flex-1 flex-col pt-12 xl:pt-32'>
-          <h1 className='h1 !font-extrabold'>
-            Hello,I am currently fixing a bug in my Code kindly check my Previous version of my Portfolio. Sorry for the inconvenience caused. 
-          </h1>
-          <a href='https://whoisrabbit.com/'>
-          <Button className='gap-x-2 shadow-xl' >
-                Check Older Version <MoveRight size={20}/>
-          </Button>
-          </a>
-    </div>
     </section>
   )
 }
