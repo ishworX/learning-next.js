@@ -1,0 +1,79 @@
+.tab-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tab-buttons .active {
+    background: var(--color-primary);
+}
+
+.tab-buttons .active:hover {
+    border-color: var(--color-primary);
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+    width: 80%;
+}
+
+.work-card {
+    background: var(--color-bg-2);
+    padding: 1.5rem;
+    border: var(--border);
+    border-radius: var(--border-radius-2);
+}
+
+.work-card img {
+    border-radius: var(--border-radius-2);
+}
+
+.work-card h4 {
+    margin: 1rem 0;
+}
+
+.work-card p {
+    color: var(--color-dark);
+    margin-bottom: 1.5rem;
+}
+
+.work-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.work-buttons .btn {
+    padding: 0.7rem 2rem;
+    background: var(--color-primary);
+}
+
+.work-buttons .btn:nth-child(1):hover {
+    border-color: var(--color-primary);
+}
+
+.work-buttons .btn:nth-child(2) {
+    background: var(--color-bg-1);
+}
+
+/* _______________RESPNSIVE/TABLET________________*/
+
+@media screen and (max-width: 1024px) {
+    .work-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* =================RESPNSIVE/PHONE==================== */
+
+@media screen and (max-width: 600px) {
+    .work-container {
+        grid-template-columns: 1fr;
+    }
+}

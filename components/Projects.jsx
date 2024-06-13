@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { WORKDATA } from '@/public/data';
 import React from 'react'
+import './ui/Project.css'
 
 const Projects = () => {
     return (
