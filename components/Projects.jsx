@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { workData } from '@/public/data';
+import { WORKDATA } from '@/public/data';
 import React from 'react'
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
             </div>
             <div className="container work-container">
                 {
-                    workData.map((work, i) => (
+                    WORKDATA.map((work, i) => (
                         <div className="work-card" key={i}>
                             <Image src={work.img} alt="work" />
                             <h4>{work.title}</h4>
