@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import { workData } from '@/public/data';
 import React from 'react'
 
 const Projects = () => {
