@@ -4,7 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import { WORKDATA } from "@/public/data";
+import PortfolioCard from './ui/PortfolioCard';
 
 
 const Portfolio = () => {
@@ -39,7 +41,14 @@ const Portfolio = () => {
                         {WORKDATA.map((project, i) => {
                             if (project.category === 'fullStack') {
                                 return <SwiperSlide key={i} className="flexCenter">
-                                    {/* Need to make Card to display for the portfolio. */}
+                                    <PortfolioCard 
+                                        url={project.url}
+                                        github={project.github}
+                                        live={project.live}
+                                        title={project.title}
+                                        category={project.category}
+                                        des={project.des}
+                                    />
                                 </SwiperSlide>
                             }
                         })}

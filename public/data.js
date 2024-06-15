@@ -1,6 +1,4 @@
 import { Paintbrush, Layers, FileJson } from "lucide-react";
-import { FaPython, FaReact, FaUsers } from 'react-icons/fa'
-import { SiNextdotjs, SiCplusplus } from 'react-icons/si'
 
 
 export const LINKS = [
@@ -83,72 +81,96 @@ export const WORKDATA = [
     title: "frontEnd Website",
     url: "/bg.png",
     category: "frontEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "frontEnd Website",
     url: "/bg.png",
     category: "frontEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "frontEnd Application",
     url: "/bg.png",
     category: "frontEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "frontEnd Application",
     url: "/bg.png",
     category: "frontEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "Website",
     url: "/bg.png",
     category: "backEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "Website",
     url: "/bg.png",
     category: "backEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "Application",
     url: "/bg.png",
     category: "backEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "Application",
     url: "/bg.png",
     category: "backEnd",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "fullStack Website",
     url: "/bg.png",
     category: "fullStack",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "fullStack Website",
     url: "/bg.png",
     category: "fullStack",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "fullStack Application",
     url: "/bg.png",
     category: "fullStack",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
     title: "fullStack Application",
     url: "/bg.png",
     category: "fullStack",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
 ];
