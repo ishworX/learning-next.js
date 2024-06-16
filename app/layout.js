@@ -22,8 +22,9 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
           themes={['dark', 'light', 'orange', 'blue', 'green', 'yellow', 'violet']}
         >
-      <Header/>
-      {children}
+        <Header/>
+        {children}
+        <Footer />
       </ThemeProvider>
       </body>
     </html>
