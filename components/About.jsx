@@ -86,7 +86,7 @@ const About = () => {
                                 <h4 className="bold-20 uppercase pb-1">Pleasure to meet you!</h4>
                                 <p className="max-w-md">This will be the paragraph about myself.</p>
                                 {/* accordion */}
-                                <Accordion sliceCount={(0, 3)} />
+                                {/* <Accordion sliceCount={(0, 3)} /> */}
                             </TabsContent>
                         </div>
                     </Tabs>
