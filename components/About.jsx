@@ -84,7 +84,7 @@ const About = () => {
                             {/* skills */}
                             <TabsContent value='intro'>
                                 <h4 className="bold-20 uppercase pb-1">Pleasure to meet you!</h4>
-                                <p className="max-w-md">This will be the paragraph about myself.</p>
+                                <p className="max-w-md">I am an enthusiastic student of Computer Science and Business Management, driven by a passion for developing impactful and purposeful projects. My learning philosophy centers on immersive, hands-on experiences that allow me to dive into complex concepts headfirst. I firmly believe this practical approach not only deepens my understanding but also sets the stage for excellence in the dynamic field of computer science. Whether it's coding, analyzing data, or collaborating on innovative solutions, I am committed to making a meaningful difference through technology.</p>
                                 {/* accordion */}
                                 {/* <Accordion sliceCount={(0, 3)} /> */}
                             </TabsContent>
