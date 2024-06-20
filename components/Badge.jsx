@@ -47,10 +47,10 @@ const Badge = ({ containerStyles, icon, endCountNum, endCountText, badgeText, re
                             </div>
                         </div>
                         <div className="flexCenter gap-x-2 text-black">
-                            <span className="bg-[#f9f29f] h-8 w-8 flexCenter rounded-full">TNN</span>
+                            <span className="bg-[#f9f29f] h-8 w-8 flexCenter rounded-full">VA</span>
                             <div className="flex flex-col">
-                                <span className="text-sm font-bold leading-none">Namaste Nepal </span>
-                                <p className="text-xs "> Discord Nepal Official Website</p>
+                                <span className="text-sm font-bold leading-none">Vilas Aesthestics </span>
+                                <p className="text-xs "> Fullstack SPA Website</p>
                             </div>
                         </div>
                     </div>
