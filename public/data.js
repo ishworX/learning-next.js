@@ -34,7 +34,7 @@ export const ACCORDION = [
 
 export const EDUCATION = [
   {
-    title: "SPA Client Project - Calagry, Canada",
+    title: "Vilas Aesthitcs - Calagry, Canada",
     year: "Currently Working",
   },
   {
