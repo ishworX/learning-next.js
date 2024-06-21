@@ -53,27 +53,6 @@ export const EXPERINCE = [
   },
 ];
 
-// SERVICES SECTION
-export const SERVICES = [
-  {
-    icon: <Paintbrush size={44} strokeWidth={0.8} />,
-    title: "Software Development",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, aspernatur fugit! Dicta quo quidem soluta.",
-  },
-  {
-    icon: <FileJson size={44} strokeWidth={0.8} />,
-    title: "Web Development",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, aspernatur fugit! Dicta quo quidem soluta.",
-  },
-  {
-    icon: <Layers size={44} strokeWidth={0.8} />,
-    title: "Data Science & Analytics",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, aspernatur fugit! Dicta quo quidem soluta.",
-  },
-];
 
 // Work data
 export const WORKDATA = [
@@ -103,6 +82,22 @@ export const WORKDATA = [
   },
   {
     title: "Indian Restaurant Website",
+    url: "/newtaste.png",
+    category: "fullStack",
+    github: "https://github.com/ishworX/new-taste-of-india",
+    live : "https://newtasteofindia.",
+    des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
+  },
+  {
+    title: "SPA Website",
+    url: "/newtaste.png",
+    category: "fullStack",
+    github: "https://github.com/DibsTHEgreat/spa_website/tree/test",
+    live : "/",
+    des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
+  },
+  {
+    title: "Interview Prep APP",
     url: "/newtaste.png",
     category: "fullStack",
     github: "https://github.com/ishworX/new-taste-of-india",
