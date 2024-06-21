@@ -53,6 +53,27 @@ export const EXPERINCE = [
   },
 ];
 
+export const SERVICES = [
+  {
+    icon: <Paintbrush size={44} strokeWidth={0.8} />,
+    title: "Software Development",
+    description:
+      "My expertise lies in both functional and object-oriented techniques with C++, unit testing, version control, and UNIX programming.",
+  },
+  {
+    icon: <FileJson size={44} strokeWidth={0.8} />,
+    title: "Web Development",
+    description:
+      "I have a foundational understanding of website development, and I'm eager to apply my knowledge to bring your online ideas to life. While my expertise may be at a intermediate level, but i can create websites that serve your basic needs.",
+  },
+  {
+    icon: <Layers size={44} strokeWidth={0.8} />,
+    title: "Data Science & Analytics",
+    description:
+      "I have a strong foundation in Data Analytics and deep learning. I use Python, CNN, Keras, Shap, and the VGG13 model to achieve remarkable results.",
+  },
+];
+
 
 // Work data
 export const WORKDATA = [
