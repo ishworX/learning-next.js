@@ -87,7 +87,7 @@ export const WORKDATA = [
   },
   {
     title: "Discord Profile Portfolio",
-    url: "/restaurant.png",
+    url: "/whoisrabbit.png",
     category: "frontEnd",
     github: "https://github.com/ishworX/Portfolio",
     live : "https://whoisrabbit.com",
@@ -95,7 +95,7 @@ export const WORKDATA = [
   },
   {
     title: "Restaurant Website",
-    url: "/whoisrabbit.png",
+    url: "/restaurant.png",
     category: "frontEnd",
     github: "https://github.com/ishworX/new-taste-of-india",
     live : "https://new-taste-of-india-35smpx1sd-ishwors-projects.vercel.app",
@@ -115,7 +115,7 @@ export const WORKDATA = [
     url: "/newtaste.png",
     category: "fullStack",
     github: "https://github.com/ishworX/new-taste-of-india",
-    live : "https://newtasteofindia.",
+    live : "https://newtasteofindia.ca",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   {
