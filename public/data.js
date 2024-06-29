@@ -98,7 +98,7 @@ export const WORKDATA = [
     url: "/restaurant.png",
     category: "frontEnd",
     github: "https://github.com/ishworX/new-taste-of-india",
-    live : "https://new-taste-of-india-35smpx1sd-ishwors-projects.vercel.app",
+    live : "https://new-taste-of-india.vercel.app",
     des: "Interactive, responsive, scalable full-stack website with intuitive user interface design.",
   },
   
