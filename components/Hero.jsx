@@ -13,7 +13,7 @@ const handleClick = () => {
 };
 
 const downloadCV = () => {
-  const cvUrl = "IshworTandonResumeFall2024.pdf";
+  const cvUrl = "IshworTandonResumeFall.pdf";
 
   const anchor = document.createElement("a");
   anchor.href = cvUrl;
