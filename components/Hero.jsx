@@ -13,12 +13,12 @@ const handleClick = () => {
 };
 
 const downloadCV = () => {
-  const cvUrl = "IshworTandonResumeFall.pdf";
+  const cvUrl = "IshworTandonResume.pdf";
 
   const anchor = document.createElement("a");
   anchor.href = cvUrl;
   anchor.target = "_blank";
-  anchor.download = "IshworTandonResumeFall2024.pdf";
+  anchor.download = "IshworTandonResume.pdf";
 
   document.body.appendChild(anchor);
   anchor.click();
